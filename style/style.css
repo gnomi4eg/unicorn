@@ -181,6 +181,9 @@ h1,h2,h3,h4,h5,h6,p{
     position: absolute;
     padding: 60px 0 0 200px;
 }
+.line-1{
+    position: relative;
+}
 .line-1>p::before{
     content: "";
     position: absolute;
@@ -210,7 +213,7 @@ h1,h2,h3,h4,h5,h6,p{
     position: absolute;
     background: #78645d;
     top: 265px;
-    right: 750px;
+    right: 560px;
     width: 340px;
     height: 5px;
 }
@@ -219,7 +222,6 @@ h1,h2,h3,h4,h5,h6,p{
     position: absolute;
     background: #78645d;
     top: 275px;
-    left: 260px;
     width: 340px;
     height: 1px;
 }
