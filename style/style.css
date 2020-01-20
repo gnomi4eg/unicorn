@@ -718,6 +718,9 @@ footer{
     font-size: 12px;
     color: #848484;
 }
+.city-2>ul>li>a:hover{
+    color: #FFA07A;
+}
 ul{
     padding: 0;
     margin: 0;
@@ -747,6 +750,9 @@ li{
     margin-top: 15px;
     display: flex;
     justify-content: space-between;
+}
+.social-3>a:hover{
+    color: #FFA07A;
 }
 .social-3 a + a{
     margin-left: 5px;
