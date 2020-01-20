@@ -29,9 +29,6 @@ h1,h2,h3,h4,h5,h6,p{
     color: black;
     background: #C0C0C0;
 }
-.nav{
-    cursor: pointer;
-}
 .menu a{
     color: #fff;
     font-size: 11px;
@@ -83,9 +80,6 @@ h1,h2,h3,h4,h5,h6,p{
 .nav>a{
     text-decoration: none;
     color: black;
-}
-.nav:hover{
-    color: #FFA07A;
 }
 .nav>a:hover{
     color: #FFA07A;
