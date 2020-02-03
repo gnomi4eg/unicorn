@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /**/
+        'use strict';
+
+        function makeCounter() {
+            let count = 0;
+            return function () {
+                return count++;
+            };
+        }
+        let counter = makeCounter();
+        let counter2 = makeCounter();
+        alert(counter()); // 0
+        alert(counter()); // 1
+        alert(counter2()); // 0
+        alert(counter2()); // 1
+
+        /*Дана функция ggg. Она требует первым параметром число, вторым функцию, которая возводит в квадрат, а третьим параметром функцию, которая возводит в куб. Эти функции есть как Function Declaration - kvadrat, kub. Пусть функция ggg вернет сумму квадрата и куба числа.
+*/
+        'use strict';
+
+        function ggg(number, kvadrat, kub) {
+            return kvadrat(number) + kub(number);
+        }
+
+        function kvadrat(number) {
+            return Math.pow(number, 2);
+        }
+
+        function kub(number) {
+            return Math.pow(number, 3);
+        }
+
+        alert(ggg(3, kvadrat, kub));
+
+        /*Сделайте функцию each, которая первым параметром принимает массив, а вторым - функцию, которая применится к каждому элементу массива. Функция each должна вернуть измененный массив.
+*/
+        'use strict';
+
+        function each(arr_go, func) {
+            return func(arr_go);
+        }
+        let arr = [2, 4, 6];
+
+        function func_1(gg) {
+            let newArr = [];
+            for (let i = 0; i < gg.length; i++) {
+                newArr[i] = Math.sqrt(gg[i]);
+            }
+            return newArr;
+        }
+        console.log(each(arr, func_1));
+
+        /*Сделайте функцию each, которая первым параметром принимает массив, а вторым - массив функций, которые по очереди применятся к каждому элементу массива: к первому элементу массива - первая функция, ко второму - вторая и так далее пока функции в массиве не закончатся, после этого возьмется первая функция, вторая и так далее по кругу
+*/
+
+        /*Сделайте функцию, каждый вызов который будет генерировать случайные числа от 1 до 100, но так, чтобы они не повторялись, пока не будут перебраны все числа из этого промежутка. Решите задачу через замыкания - в замыкании должен хранится массив чисел, которые уже были сгенерированы функцией.
+*/
+        /*Сделайте функцию, которая считает и выводит количество своих вызовов.
+	func(); //выведет 1
+func(); //выведет 2
+func(); //выведет 3
+func(); //выведет 4
+*/
+        'use strict';
+
+        function causes() {
+            let num = 1;
+            return function () { return num++ };
+        }
+
+        let func = causes();
+
+        console.log(func());
+        console.log(func());
+        console.log(func());
+        console.log(func());
+    </script>
+</body>
+
+</html>
