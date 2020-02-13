@@ -1,0 +1,245 @@
+/*
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*let personName = 'Vasya';*/
+
+        /* switch (personName) {
+             case 5: {
+                 alert('You js is just pain!!!');
+                 break;
+             }
+             case 'Vasya': {
+                 alert('hi vasy');
+                 break;
+             }
+             default: alert('everything is ok');
+         }
+        */
+
+        /*function summa(a = 6, b = 7, f = 9, g = 20) {
+
+            let result = a + b + f + g;
+            return result;
+        }
+
+        let firstSide = 5;
+        let secondSide = 10;
+        let result = summa(20, 0, 0, 10,);
+        alert(result);
+*/
+        /*  function foo(number_1 = 2, number_2 = 4, number_3 = 6) {
+              let result = number_1 + number_2 + number_3;
+              let foo = result % 3;
+              switch (foo) {
+                  case 2:
+                      result = 'so so';
+                      break;
+                  case 1:
+                      result = 'yeah boy';
+                      break;
+                  default:
+                      result = 'cool';
+              }
+  
+              return result;
+          }
+  
+          alert(foo());
+          console.log(foo(1,2,2));
+          */
+
+        /*function fune() {
+            console.log('go');
+        };
+        function fune2() {
+            console.log('stop');
+        }
+        const car = {
+            drive: fune,
+            stop: fune2
+        }
+        car.drive();
+        car.stop();
+*/
+        /*  function fune() {
+              console.log(5);
+          }
+  
+          function fune2(f) {
+              f();
+          }
+  
+          fune2(fune());
+          */
+
+        /*function hello(name) {
+            console.log('Hello ' + name);
+        }
+
+        function ask(name, cb) {
+            cb(name);
+        }
+
+        ask('Sergey', hello);
+        */
+
+        /*let a = 'cv';
+        let localVarLikeGlobal = "ok man";
+        function examle(element, i) {
+            let localVar = 'bn ' + localVarLikeGlobal;
+            console.log(localVar);
+        }
+
+        function ex2() {
+            let localVar2 = 'asd ' + localVarLikeGlobal;
+            console.log(localVar2);
+        }
+        examle();
+        ex2();*/
+
+        /*каждое четное число сложить и вывести их сумму чисел*/
+        /*let arr = [2, 3, 6, 5, 77, 7, 24];
+
+        function func(gg) {
+            let arr = 0;
+            for (let i = 0; i < gg.length; i++) {
+                if (gg[i] % 2 == 0) {
+                    arr += gg[i];
+                }
+            }
+            return arr;
+        }
+        alert(func(arr));*/
+
+        /*let arr = [2, 4, 8, 30, 34];
+        let sum = [];
+
+        arr.forEach((item,index) => sum[index] = index % 2 == 1 ? item + 5 : item);
+
+        alert(sum);*/
+
+        /*let car = {
+            name: 'Volvo',
+            color: 'Black',
+            hello() { console.log(this.name, car.color) }
+        }
+
+        car.hello()*/
+
+        //const arr=[].;
+
+        /*class User {
+            constructor(name) {
+                this.name = name;
+                this._age = null;
+            }
+            static helloStatic() {
+                console.log('im static metod');
+            }
+            hello() {
+                console.log(this.name);
+            }
+            get age() {
+                return this._age;
+            }
+            set age(age) {
+                this._age = age;
+            }
+        }
+
+        class Teacher extends User {
+            constructor(name, subject) {
+                super(name);
+                this.subject = subject;
+            }
+            hello() {
+                super.hello();
+                console.log('hello from child class');
+            }
+            startLesson() {
+                console.log(`Hello, today we start studying ${this.subject}`);
+            }
+        }
+
+
+        let teacher = new Teacher('Mathman','Math');
+        teacher.hello();
+        teacher.startLesson();*/
+
+        /*let b = {};
+        let a = {
+            name: 'der',
+            hello() {
+                console.log(this.name);
+            }
+        }
+        b.hello = a.hello;
+        b.hello();*/
+
+        //console.log((10).toString(8));// в строку
+        //console.log('sFNKDring'.toLowerCase());// нижний регистр
+        //console.log('rrrr'.toUpperCase());// верхний регистр
+        //console.log('string'.indexOf('r', 2));
+        //console.log('str'.includes('r')); //булево значение
+        //console.log('str'.slice(1));
+        //console.log(Math.floor(2.7));// округление в низ
+        //console.log(Math.ceil(5.9));// округление в верх
+        //console.log(Math.round(4.7)); // обычное округление
+        //console.log(9.1234.toFixed(2)); // отображает числа после запятой
+        //console.log(parseInt('12.3')); // выводит числа до строки или символа
+        //console.log(parseFloat('12.3.4.5.8.6')) // выводит десятичные числа до первой буквы
+        //console.log(Math.pow());
+        /*let arr =[];
+        arr.push(1,2,3,4,5,6,7,8,9);
+        console.log(arr.pop());
+        unshift - добовляет, shift - удаляет // добавляет один или более элементов в начало массива и возвращает новую длину массива.*/
+        /*let arr = ['ds']
+        arr.unshift(1,2,3,4,5)
+        arr.shift()
+        //console.log(arr)
+        for(let gg of arr){
+          console.log(gg)
+        }
+        for(let a in arr){
+          console.log(a)
+        }*/
+        /*let obj = {
+          a: 'ds',
+          b: 'rr',
+          c: 'ds'
+        }
+        for( let ar in obj){
+          console.log(ar)
+        }*/
+        let arr = [2, 4, 6, 8]
+        arr.forEach((item) => console.log(item)) // у стрелочных функций нет своего контекста вызова
+        arr.splice(1, 2, 's', 'f', 'f')
+        console.log(arr)
+        let arr2 = [2, 'f', 'g']
+        let arr3 = [2, 'f', 'g']
+        arr = arr.concat(arr2, arr3)
+        console.log(arr)
+        let r = arr.find((esle, i) => { return esle === 'g' }) //находит значение
+        console.log(r)
+        let t = arr.findIndex((esle, i) => { return esle > 1 }) // фильтрует значение
+        console.log(t)
+        let q = arr.map((esle, i, arr) => {
+            return esle + 5
+        })
+        console.log(q)
+        let rrr = 'sddbb'
+        let wqwq = rrr.split('')
+        console.log(wqwq)
+
+    </script>
+</body>
